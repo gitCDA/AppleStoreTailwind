@@ -15,11 +15,11 @@ use App\Http\Controllers\RelationController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', [AppleController::class, 'index'])->name("apple") ;
+Route::get('/i', [AppleController::class, 'index'])->name("apple") ;
 
 Route::get('/relation', [RelationController::class, 'index'])->name("relation") ;
 
